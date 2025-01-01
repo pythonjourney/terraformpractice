@@ -59,7 +59,8 @@ resource "aws_instance" "webserver" {
 
     tags = {
 
-        name = "${var.environment}-server"
+        Name = "${var.environment}-server"
+        TF_Author = "Nagendra"
     }
 
 }
